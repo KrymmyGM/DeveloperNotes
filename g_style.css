@@ -1,0 +1,46 @@
+body{
+  font-family: sans-serif;
+}
+
+/*General header style*/
+.gHeader{
+  background-color: #CEEC75;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  height: 88px;
+}
+.SiteH {
+  margin:auto 15px;
+  padding: 5px 0px;
+}
+.logo{
+
+  width: 160px;
+}
+/*General menu style*/
+.gMenu{
+  align-items: center;
+  list-style: none;
+  display: flex;
+  margin: 16px;
+  padding:0;
+}
+.gMenu_list {
+  padding: 16px 15px;
+}
+.gM_li_elem {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/*Base content style*/
+.cSite{
+  padding:16px 0;
+  margin-top: 20px;
+  background-color: #EDEDED;
+
+  border-radius: 0 0 10px 10px;
+}
+.cSite h2{
+  text-align: center;
+}

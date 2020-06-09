@@ -1,0 +1,45 @@
+.cont{
+  display: flex;
+  margin:0 25px;
+  align-items: center;
+}
+
+.arContBlok {
+  border-radius: 5px;
+  border: solid 10px #EDEDED;
+  margin: 0 5px;
+  width: 300px;
+  height: 300px;
+}
+
+.contHTML:hover {
+  animation: BGcontUP 1s forwards;
+}
+.contHTML{
+
+}
+
+.iconWeb{
+  animation: BGcontDown 1s forwards;
+  width: 300px;
+  height: 300px;
+}
+
+@keyframes BGcontUP {
+    from{
+
+    }
+    to {
+      border-color: #AFCBE4;
+      background-color: #AFCBE4;
+    }
+}
+@keyframes BGcontDown {
+    from{
+      border-color: #AFCBE4;
+      background-color: #AFCBE4;
+    }
+    to {
+
+    }
+}
