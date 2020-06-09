@@ -9,7 +9,7 @@ while True:
 
         if create == "1":
             DerictFirst = "Web"
-            print("\n1)None\n2)Html")
+            print("\n1)None\n2)Html\n3)JS")
             create = input("\nВведите ответ:")
             i = int(input("Сколько файлов:"))
             if create == "1":
@@ -23,6 +23,14 @@ while True:
                     fileName = input('\nВведите название файла:') #appoint file name
                     DerictSecond = "HTML"
                     PageName = "html"
+                    NameLink = input()
+                    cPageFunc.cPageAdd(fileName, PageName, DerictFirst, DerictSecond, NameLink)
+                    c+=1
+            elif create == "3":
+                while c <= i:
+                    fileName = input('\nВведите название файла:') #appoint file name
+                    DerictSecond = "JS"
+                    PageName = "js"
                     NameLink = input()
                     cPageFunc.cPageAdd(fileName, PageName, DerictFirst, DerictSecond, NameLink)
                     c+=1
