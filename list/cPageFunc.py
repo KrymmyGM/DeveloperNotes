@@ -20,7 +20,7 @@ def cPage(fileName, PageName, DerictFirst, DerictSecond): #Function to add page 
         addLink.write("    <link rel=\"stylesheet\" href=\"style/"+fileName+".css\">")
 
 def cPageAdd(fileName, PageName, DerictFirst, DerictSecond, NameLink): #The function of adding a file for a document added to the index category
-    with open('cHT0.txt', 'r') as cHTadd: #Open file with maket
+    with open('MakAdPag.txt', 'r') as cHTadd: #Open file with maket
         with open(DerictFirst+"/"+DerictSecond+"/"+fileName+'.html', 'w') as cHM:
             for OHM in cHTadd:
                 cHM.write(OHM)

@@ -20,9 +20,9 @@ while True:
                     cPageFunc.cPage(fileName, PageName, DerictFirst, DerictSecond)
                     c+=1
             elif create == "2":
+                PageName = input("Название страницы:")
                 while c <= i:
                     fileName = input('\nВведите название файла:') #appoint file name
-                    PageName = input("Название страницы:")
                     DerictSecond = PageName
                     NameLink = input()
                     cPageFunc.cPageAdd(fileName, PageName, DerictFirst, DerictSecond, NameLink)
@@ -41,9 +41,9 @@ while True:
                     cPageFunc.cPage(fileName, PageName, DerictFirst, DerictSecond)
                     c+=1
             elif create == "2":
+                PageName = input("Название страницы:")
                 while c <= i:
                     fileName = input('\nВведите название файла:') #appoint file name
-                    PageName = input("Название страницы:")
                     DerictSecond = PageName
                     NameLink = input()
                     cPageFunc.cPageAdd(fileName, PageName, DerictFirst, DerictSecond, NameLink)
