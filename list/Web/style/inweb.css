@@ -4,42 +4,24 @@
   align-items: center;
 }
 
+
+
 .arContBlok {
+  transition-property: background-color, border-color;
+  transition-duration: 1s;
   border-radius: 5px;
-  border: solid 10px #EDEDED;
+  padding: 10px;
   margin: 0 5px;
   width: 300px;
   height: 300px;
 }
 
-.contHTML:hover {
-  animation: BGcontUP 1s forwards;
-}
-.contHTML{
-  animation: BGcontDown 1s forwards;
+.arContBlok:hover{
+  border-color: #FCBE7C;
+  background-color: #FCBE7C;
 }
 
 .iconWeb{
-
   width: 300px;
   height: 300px;
-}
-
-@keyframes BGcontUP {
-    from{
-
-    }
-    to {
-      border-color: #AFCBE4;
-      background-color: #AFCBE4;
-    }
-}
-@keyframes BGcontDown {
-    from{
-      border-color: #AFCBE4;
-      background-color: #AFCBE4;
-    }
-    to {
-
-    }
 }

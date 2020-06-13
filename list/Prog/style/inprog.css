@@ -4,17 +4,24 @@
   align-items: center;
 }
 
+
+
 .arContBlok {
+  transition-property: background-color, border-color;
+  transition-duration: 1s;
   border-radius: 5px;
+  padding: 10px;
   margin: 0 5px;
-  background-color: red;
   width: 300px;
   height: 300px;
 }
 
-.contPy {
-  border: solid 6px #AFCBE4;
+.arContBlok:hover{
+  border-color: #AFCBE4;
   background-color: #AFCBE4;
+}
+
+.contPy {
 }
 
 .iconProg{

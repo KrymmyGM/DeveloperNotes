@@ -1,13 +1,16 @@
 body{
   font-family: sans-serif;
+  background-color: #BFB5AA;
 }
 
 /*General header style*/
 .gHeader{
-  background-color: #CEEC75;
+  background-color: #B0D347;
   border-radius: 10px 10px 0 0;
   display: flex;
   height: 88px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 .SiteH {
   margin:auto 15px;
@@ -36,11 +39,40 @@ body{
 /*Base content style*/
 .cSite{
   padding:16px 0;
-  margin-top: 20px;
+  margin: 20px 50px;
   background-color: #EDEDED;
 
   border-radius: 0 0 10px 10px;
+
 }
 .cSite h2{
   text-align: center;
 }
+
+/*Table style*/
+.gTable{
+  background-color:#CFDAE4;
+  font-size: 20px;
+  border-collapse: collapse;
+  margin:0 160px;;
+}
+
+.gTable th {
+  background-color: #7797BE;
+}
+
+.gTable td,th{
+  border: 2px solid;
+  padding: 20px;
+}
+
+/*Style all elem*/
+a {
+  color: #000000;
+  text-decoration:none;
+}
+
+a:hover{
+  color:#916334;
+}
+/*Animate*/
