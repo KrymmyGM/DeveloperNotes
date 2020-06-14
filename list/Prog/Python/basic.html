@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <link rel="stylesheet" href="../style/Add.css">
+    <link rel="stylesheet" href="../style/basic.css">
     <link rel="stylesheet" href="../../../g_style.css">
     <meta charset="utf-8">
-    <title></title>
+    <title>Основы Python</title>
   </head>
   <body>
   <header class="gHeader"> <!--Base global header-->
@@ -23,54 +23,86 @@
     </menu> <!--End global menu-->
   </header>
   <section class="cSite"> <!--base content site-->
-    <h2>Основные типы данных</h2>
-    <table class="gTable">
-      <tr>
-        <th scope="col">Имя</th>
-        <th scope="col">Тип</th>
-        <th scope="col">Описание</th>
-      </tr>
-      <tr>
-        <td>Целые чила</td>
-        <td>int</td>
-        <td>1,2,3</td>
-      </tr>
-      <tr>
-        <td>Числа с плавающей точкой</td>
-        <td>float</td>
-        <td>1.1, 2.4, 3.0</td>
-      <tr>
-      </tr>
-        <td>Строки</td>
-        <td>str</td>
-        <td>Последовательность символов: "Hello", "H@ck", "42"</td>
-      </tr>
-      <tr>
-        <td>Списки</td>
-        <td>list</td>
-        <td>Последовательность объектов: [1, 2.0, "hello"]</td>
-      </tr>
-      <tr>
-        <td>Словари</td>
-        <td>dict</td>
-        <td>Список пар "ключ-значение": {"Bony":100, "Hel":"Hello"}</td>
-      </tr>
-      <tr>
-        <td>Кортежи</td>
-        <td>tuple</td>
-        <td>Последовательность неизменяемых объектов: (1, 2.0, "hello")</td>
-      </tr>
-      <tr>
-        <td>Можества</td>
-        <td>set</td>
-        <td>Последовательность уникальных объектов: {"a", b"...}</td>
-      </tr>
-      <tr>
-        <td>Булевы значения</td>
-        <td>bool</td>
-        <td>Логические значения:True или False</td>
-      </tr>
-    </table>
+    <div class="inform">
+      <h2>Основы Python</h2>
+      <p>В этом разделе мы познакомимся с синтаксисом и покажем основные типы
+        данных в Python</p>
+    </div>
+    <article class="content">
+      <h3>Синтаксис python</h3>
+      <ul>
+        <li>Конец строки является концом инструкции(точка с запятой не обязательна):
+            <div class="example">
+              <pre>  a = "Add"
+  b = "Back"</pre>
+            </div>
+        </li>
+        <li>Вложенные инструкции объединяются в блоки по величине отступов.
+          Отступ может быть любым, главное, чтобы в пределах одного вложенного
+          блока отступ был одинаков. И про читаемость кода не забывайте.
+          Отступ в 1 пробел, к примеру, не лучшее решение. Используйте 4
+          пробела или знак табуляции:
+        </li>
+        <li>Вложенные инструкции в Python записываются в соответствии с одним
+          и тем же шаблоном, когда основная инструкция завершается двоеточием,
+          вслед за которым располагается вложенный блок кода, обычно с отступом
+          под строкой основной инструкции.</li>
+          <div class="example">
+            <p>Пример вложенния</p>
+              <pre><span class="logic"> if</span> a == "Add":
+    <span class="inp">print</span>("Add")
+    <span class="inp">print</span>("Stop")</pre>
+          </div>
+      </ul>
+      <h3>Основные типы данных</h3>
+      <table class="gTable">
+        <tr>
+          <th scope="col">Имя</th>
+          <th scope="col">Тип</th>
+          <th scope="col">Описание</th>
+        </tr>
+        <tr>
+          <td>Целые чила</td>
+          <td>int</td>
+          <td>1,2,3</td>
+        </tr>
+        <tr>
+          <td>Числа с плавающей точкой</td>
+          <td>float</td>
+          <td>1.1, 2.4, 3.0</td>
+        <tr>
+        </tr>
+          <td>Строки</td>
+          <td>str</td>
+          <td>Последовательность символов: "Hello", "H@ck", "42"</td>
+        </tr>
+        <tr>
+          <td>Списки</td>
+          <td>list</td>
+          <td>Последовательность объектов: [1, 2.0, "hello"]</td>
+        </tr>
+        <tr>
+          <td>Словари</td>
+          <td>dict</td>
+          <td>Список пар "ключ-значение": {"Bony":100, "Hel":"Hello"}</td>
+        </tr>
+        <tr>
+          <td>Кортежи</td>
+          <td>tuple</td>
+          <td>Последовательность неизменяемых объектов: (1, 2.0, "hello")</td>
+        </tr>
+        <tr>
+          <td>Можества</td>
+          <td>set</td>
+          <td>Последовательность уникальных объектов: {"a", b"...}</td>
+        </tr>
+        <tr>
+          <td>Булевы значения</td>
+          <td>bool</td>
+          <td>Логические значения:True или False</td>
+        </tr>
+      </table>
+    </article>
   </section>
   <footer>
   </footer>

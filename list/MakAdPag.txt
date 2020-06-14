@@ -26,6 +26,10 @@
     </menu> <!--End global menu-->
   </header>
   <section class="cSite"> <!--base content site-->
+    <div class="inform">
+    </div>
+    <article class="content">
+    </article>
   </section>
   <footer>
   </footer>

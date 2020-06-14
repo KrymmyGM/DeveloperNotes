@@ -1,16 +1,18 @@
 body{
   font-family: sans-serif;
   background-color: #BFB5AA;
+  margin: 0;
+  padding: 0;
 }
 
 /*General header style*/
 .gHeader{
   background-color: #B0D347;
-  border-radius: 10px 10px 0 0;
+/*  border-radius: 10px 10px 0 0;*/
   display: flex;
   height: 88px;
-  margin-left: 50px;
-  margin-right: 50px;
+/*  margin-left: 50px;
+  margin-right: 50px;*/
 }
 .SiteH {
   margin:auto 15px;
@@ -42,11 +44,22 @@ body{
   margin: 20px 50px;
   background-color: #EDEDED;
 
-  border-radius: 0 0 10px 10px;
+  /*border-radius: 0 0 10px 10px;*/
 
 }
 .cSite h2{
   text-align: center;
+}
+
+.content{
+  margin: 0 150px;
+}
+
+.inform{
+  text-align: center;
+  background-color: #0E0C06;
+  padding: 30px;
+  color: #F1F3F9;
 }
 
 /*Table style*/
@@ -54,7 +67,6 @@ body{
   background-color:#CFDAE4;
   font-size: 20px;
   border-collapse: collapse;
-  margin:0 160px;;
 }
 
 .gTable th {
@@ -74,5 +86,26 @@ a {
 
 a:hover{
   color:#916334;
+}
+
+/*example style*/
+.example{
+  width: 175px;
+  height: auto;
+  border: 2px dashed;
+  margin-left: 150px
+}
+.example p{
+  margin: 0 10px;
+}
+
+
+/*Style prog color*/
+.logic{
+  color: blue
+}
+
+.inp{
+  color:green
 }
 /*Animate*/

@@ -25,7 +25,7 @@ def cPageAdd(fileName, PageName, DerictFirst, DerictSecond, NameLink): #The func
             for OHM in cHTadd:
                 cHM.write(OHM)
 
-    with open(DerictFirst+"/"+PageName+".html", "a") as apend: #To add addres in file
+    with open(DerictFirst+"/"+PageName+".html", "a") as apend: #To add addres in index file
         apend.write("\n<li><a href=\""+DerictSecond+"/"+fileName+".html\">"+NameLink+"</a></li>")
 
     with open(DerictFirst+"/style/"+fileName+".css", "w") as writeStyle: #Create style file for page
@@ -33,4 +33,7 @@ def cPageAdd(fileName, PageName, DerictFirst, DerictSecond, NameLink): #The func
 
     with open(DerictFirst+"/"+DerictSecond+"/"+fileName+".html", "r+") as addLink: #Link style with fileName
         addLink.seek(55)
-        addLink.write("    <link rel=\"stylesheet\" href=\"../style/"+fileName+".css\">")
+        addLink.write("<link rel=\"stylesheet\" href=\"../style/"+fileName+".css\">")
+
+    with open(DerictFirst+"/"+DerictSecond+"/"+fileName+".html", "a") as addLink: #Link style with fileName
+        addLink.write("<a href=\"../"+PageName+".html\">"+PageName+"</a>")
